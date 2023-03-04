@@ -1,2 +1,5 @@
-package com.example.infleanjpalecture.domain;public class OrderStatus {
+package com.example.infleanjpalecture.domain;
+
+public enum OrderStatus {
+    CANCEL, ORDER
 }
