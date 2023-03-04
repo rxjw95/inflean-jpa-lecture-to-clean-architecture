@@ -1,2 +1,5 @@
-package com.example.infleanjpalecture.domain;public class DeliveryStatus {
+package com.example.infleanjpalecture.domain;
+
+public enum DeliveryStatus {
+    READY, COMP
 }
