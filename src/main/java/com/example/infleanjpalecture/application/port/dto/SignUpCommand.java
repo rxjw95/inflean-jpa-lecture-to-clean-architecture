@@ -1,4 +1,4 @@
-package com.example.infleanjpalecture.application.port.in.dto;
+package com.example.infleanjpalecture.application.port.dto;
 
 import com.example.infleanjpalecture.domain.Address;
 import lombok.Getter;
