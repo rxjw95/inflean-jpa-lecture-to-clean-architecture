@@ -1,5 +1,7 @@
-package com.example.infleanjpalecture.domain;
+package com.example.infleanjpalecture.member.domain;
 
+import com.example.infleanjpalecture.common.domain.Address;
+import com.example.infleanjpalecture.domain.Order;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

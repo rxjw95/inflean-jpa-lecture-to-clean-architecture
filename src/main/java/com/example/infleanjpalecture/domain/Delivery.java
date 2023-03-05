@@ -1,5 +1,6 @@
 package com.example.infleanjpalecture.domain;
 
+import com.example.infleanjpalecture.common.domain.Address;
 import jakarta.persistence.*;
 import lombok.Getter;
 

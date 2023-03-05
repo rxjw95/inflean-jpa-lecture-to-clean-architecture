@@ -1,4 +1,4 @@
-package com.example.infleanjpalecture.domain;
+package com.example.infleanjpalecture.common.domain;
 
 import jakarta.persistence.Embeddable;
 import lombok.AccessLevel;

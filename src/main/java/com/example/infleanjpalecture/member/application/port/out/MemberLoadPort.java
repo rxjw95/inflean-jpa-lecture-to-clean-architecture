@@ -1,6 +1,6 @@
-package com.example.infleanjpalecture.application.port.out;
+package com.example.infleanjpalecture.member.application.port.out;
 
-import com.example.infleanjpalecture.domain.Member;
+import com.example.infleanjpalecture.member.domain.Member;
 
 import java.util.List;
 

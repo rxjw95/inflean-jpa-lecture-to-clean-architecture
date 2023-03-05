@@ -1,10 +1,10 @@
 package com.example.infleanjpalecture.application;
 
-import com.example.infleanjpalecture.application.port.dto.SignUpCommand;
-import com.example.infleanjpalecture.application.port.in.MemberSignUpUseCase;
-import com.example.infleanjpalecture.application.port.out.MemberLoadPort;
-import com.example.infleanjpalecture.domain.Address;
-import com.example.infleanjpalecture.domain.Member;
+import com.example.infleanjpalecture.common.domain.Address;
+import com.example.infleanjpalecture.member.application.port.dto.SignUpCommand;
+import com.example.infleanjpalecture.member.application.port.in.MemberSignUpUseCase;
+import com.example.infleanjpalecture.member.application.port.out.MemberLoadPort;
+import com.example.infleanjpalecture.member.domain.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

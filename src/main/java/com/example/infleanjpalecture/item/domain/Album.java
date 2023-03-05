@@ -1,4 +1,4 @@
-package com.example.infleanjpalecture.domain.item;
+package com.example.infleanjpalecture.item.domain;
 
 import jakarta.persistence.Entity;
 import lombok.AccessLevel;

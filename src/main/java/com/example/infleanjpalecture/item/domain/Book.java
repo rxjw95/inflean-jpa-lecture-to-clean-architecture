@@ -1,5 +1,6 @@
-package com.example.infleanjpalecture.domain.item;
+package com.example.infleanjpalecture.item.domain;
 
+import com.example.infleanjpalecture.common.domain.Money;
 import jakarta.persistence.Entity;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -13,7 +14,8 @@ public class Book extends Item{
     private String author;
     private String isbn;
 
-    public Book(String author, String isbn) {
+    public Book(String name, Money price, int stockQuantity, String author, String isbn) {
+        super(name, price, stockQuantity);
         this.author = author;
         this.isbn = isbn;
     }

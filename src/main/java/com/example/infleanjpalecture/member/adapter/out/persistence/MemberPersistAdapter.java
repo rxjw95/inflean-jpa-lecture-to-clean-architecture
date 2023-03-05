@@ -1,13 +1,13 @@
-package com.example.infleanjpalecture.adapter.out.persistence;
+package com.example.infleanjpalecture.member.adapter.out.persistence;
 
-import com.example.infleanjpalecture.application.port.out.MemberPersistPort;
-import com.example.infleanjpalecture.domain.Member;
+import com.example.infleanjpalecture.member.application.port.out.MemberPersistPort;
+import com.example.infleanjpalecture.member.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MemberPersistenceAdapter implements MemberPersistPort {
+public class MemberPersistAdapter implements MemberPersistPort {
     @PersistenceContext
     private EntityManager entityManager;
 

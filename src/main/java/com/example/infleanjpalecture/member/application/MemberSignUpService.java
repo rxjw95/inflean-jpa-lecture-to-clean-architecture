@@ -1,11 +1,11 @@
-package com.example.infleanjpalecture.application;
+package com.example.infleanjpalecture.member.application;
 
-import com.example.infleanjpalecture.application.port.in.MemberSignUpUseCase;
-import com.example.infleanjpalecture.application.port.dto.SignUpCommand;
-import com.example.infleanjpalecture.application.port.out.MemberLoadPort;
-import com.example.infleanjpalecture.application.port.out.MemberPersistPort;
-import com.example.infleanjpalecture.domain.Member;
 import com.example.infleanjpalecture.exception.DuplicateMemberNameException;
+import com.example.infleanjpalecture.member.application.port.dto.SignUpCommand;
+import com.example.infleanjpalecture.member.application.port.in.MemberSignUpUseCase;
+import com.example.infleanjpalecture.member.application.port.out.MemberLoadPort;
+import com.example.infleanjpalecture.member.application.port.out.MemberPersistPort;
+import com.example.infleanjpalecture.member.domain.Member;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 

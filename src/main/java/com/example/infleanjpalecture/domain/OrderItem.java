@@ -1,6 +1,7 @@
 package com.example.infleanjpalecture.domain;
 
-import com.example.infleanjpalecture.domain.item.Item;
+import com.example.infleanjpalecture.common.domain.Money;
+import com.example.infleanjpalecture.item.domain.Item;
 import jakarta.persistence.*;
 
 @Entity
