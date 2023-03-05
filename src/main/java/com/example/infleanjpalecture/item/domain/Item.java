@@ -1,7 +1,6 @@
 package com.example.infleanjpalecture.item.domain;
 
 import com.example.infleanjpalecture.common.domain.Money;
-import com.example.infleanjpalecture.domain.Category;
 import com.example.infleanjpalecture.exception.NotEnoughStockException;
 import jakarta.persistence.*;
 import lombok.AccessLevel;

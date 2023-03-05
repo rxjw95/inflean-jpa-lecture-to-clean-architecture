@@ -1,7 +1,7 @@
 package com.example.infleanjpalecture.member.domain;
 
 import com.example.infleanjpalecture.common.domain.Address;
-import com.example.infleanjpalecture.domain.Order;
+import com.example.infleanjpalecture.order.domain.Order;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -29,5 +29,9 @@ public class Member {
     public Member(String name, Address address) {
         this.name = name;
         this.address = address;
+    }
+
+    public void addOrder(Order order) {
+        orders.add(order);
     }
 }

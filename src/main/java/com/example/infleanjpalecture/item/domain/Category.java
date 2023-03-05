@@ -1,6 +1,5 @@
-package com.example.infleanjpalecture.domain;
+package com.example.infleanjpalecture.item.domain;
 
-import com.example.infleanjpalecture.item.domain.Item;
 import jakarta.persistence.*;
 import lombok.Getter;
 
