@@ -7,7 +7,7 @@ import com.example.infleanjpalecture.item.application.port.out.ItemPersistPort;
 import com.example.infleanjpalecture.item.domain.Book;
 import com.example.infleanjpalecture.member.application.port.out.MemberPersistPort;
 import com.example.infleanjpalecture.member.domain.Member;
-import com.example.infleanjpalecture.order.application.port.in.OrderReceiptUseCase;
+import com.example.infleanjpalecture.order.application.port.in.OrderRegisterUseCase;
 import com.example.infleanjpalecture.order.application.port.out.OrderLoadPort;
 import com.example.infleanjpalecture.order.domain.Order;
 import com.example.infleanjpalecture.order.domain.OrderStatus;
@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 class OrderReceiptServiceTest {
 
     @Autowired
-    private OrderReceiptUseCase orderReceiptUseCase;
+    private OrderRegisterUseCase orderRegisterUseCase;
 
     @Autowired
     private OrderLoadPort orderLoadPort;
@@ -44,7 +44,7 @@ class OrderReceiptServiceTest {
         Book book = new Book("Test Driven Development", new Money(18000), 10, "uncle bob", "123456");
         itemPersistPort.persist(book);
 
-        Long orderId = orderReceiptUseCase.order(member.getMemberId(), book.getItemId(), 2);
+        Long orderId = orderRegisterUseCase.order(member.getMemberId(), book.getItemId(), 2);
         Order order = orderLoadPort.loadOne(orderId);
 
         assertThat(order.getStatus()).isEqualTo(OrderStatus.ORDER);
@@ -58,7 +58,7 @@ class OrderReceiptServiceTest {
         Book book = new Book("Test Driven Development", new Money(18000), 10, "uncle bob", "123456");
         itemPersistPort.persist(book);
 
-        orderReceiptUseCase.order(member.getMemberId(), book.getItemId(), 2);
+        orderRegisterUseCase.order(member.getMemberId(), book.getItemId(), 2);
 
         assertThat(book.getStockQuantity()).isEqualTo(8);
     }
@@ -71,7 +71,7 @@ class OrderReceiptServiceTest {
         Book book = new Book("Test Driven Development", new Money(18000), 10, "uncle bob", "123456");
         itemPersistPort.persist(book);
 
-        Long orderId = orderReceiptUseCase.order(member.getMemberId(), book.getItemId(), 2);
+        Long orderId = orderRegisterUseCase.order(member.getMemberId(), book.getItemId(), 2);
         Order order = orderLoadPort.loadOne(orderId);
 
         assertThat(order.getTotalPrice()).isEqualTo(new Money(36000));
@@ -86,7 +86,7 @@ class OrderReceiptServiceTest {
         itemPersistPort.persist(book);
 
         assertThatExceptionOfType(NotEnoughStockException.class)
-                .isThrownBy(() -> orderReceiptUseCase.order(member.getMemberId(), book.getItemId(), 2))
+                .isThrownBy(() -> orderRegisterUseCase.order(member.getMemberId(), book.getItemId(), 2))
                 .withMessage("재고가 부족합니다.");
 
     }
