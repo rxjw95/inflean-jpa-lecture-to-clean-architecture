@@ -1,7 +1,7 @@
 package com.example.infleanjpalecture.item.application;
 
 import com.example.infleanjpalecture.item.application.port.DomainToDtoConverter;
-import com.example.infleanjpalecture.item.application.port.dto.ItemDto;
+import com.example.infleanjpalecture.item.application.port.dto.BookDto;
 import com.example.infleanjpalecture.item.application.port.in.ItemLoadUseCase;
 import com.example.infleanjpalecture.item.application.port.out.ItemLoadPort;
 import org.springframework.stereotype.Service;
@@ -22,12 +22,13 @@ public class ItemLoadService implements ItemLoadUseCase {
     }
 
     @Override
-    public List<ItemDto> loadItems() {
-        return converter.toItemDtos(itemLoadPort.loadAll());
+    public List<BookDto> loadItems() {
+        List<BookDto> bookDtos = converter.toBookDtos(itemLoadPort.loadAll());
+        return bookDtos;
     }
 
     @Override
-    public ItemDto loadItem(Long itemId) {
-        return converter.toItemDto(itemLoadPort.loadOne(itemId));
+    public BookDto loadItem(Long itemId) {
+        return converter.toBookDto(itemLoadPort.loadOne(itemId));
     }
 }

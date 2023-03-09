@@ -1,12 +1,12 @@
 package com.example.infleanjpalecture.item.application.port.in;
 
-import com.example.infleanjpalecture.item.application.port.dto.ItemDto;
+import com.example.infleanjpalecture.item.application.port.dto.BookDto;
 
 import java.util.List;
 
 public interface ItemLoadUseCase {
 
-    List<ItemDto> loadItems();
+    List<BookDto> loadItems();
 
-    ItemDto loadItem(Long itemId);
+    BookDto loadItem(Long itemId);
 }

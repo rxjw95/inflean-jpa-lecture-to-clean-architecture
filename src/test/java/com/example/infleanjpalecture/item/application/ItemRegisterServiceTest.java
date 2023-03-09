@@ -1,6 +1,7 @@
 package com.example.infleanjpalecture.item.application;
 
-import com.example.infleanjpalecture.item.application.port.dto.ItemRegisterCommand;
+import com.example.infleanjpalecture.common.domain.Money;
+import com.example.infleanjpalecture.item.application.port.dto.RegisterBookCommand;
 import com.example.infleanjpalecture.item.application.port.in.ItemRegisterUseCase;
 import com.example.infleanjpalecture.item.application.port.out.ItemLoadPort;
 import com.example.infleanjpalecture.item.domain.Item;
@@ -22,9 +23,9 @@ class ItemRegisterServiceTest {
 
     @Test
     void persist() {
-        ItemRegisterCommand itemRegisterCommand = new ItemRegisterCommand("Test Driven Development", 18000, 10, "uncle bob", "123456");
+        RegisterBookCommand registerBookCommand = new RegisterBookCommand("Test Driven Development", Money.from(18000), 10, "uncle bob", "123456");
 
-        Long itemId = itemRegisterUseCase.register(itemRegisterCommand);
+        Long itemId = itemRegisterUseCase.register(registerBookCommand);
         Item item = itemLoadPort.loadOne(itemId);
 
         Assertions.assertThat(item.getName()).isEqualTo("Test Driven Development");

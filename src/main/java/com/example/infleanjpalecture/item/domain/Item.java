@@ -36,6 +36,17 @@ public abstract class Item {
         this.stockQuantity = stockQuantity;
     }
 
+    protected Item(Long id, String name, Money price, int stockQuantity) {
+        this.itemId = id;
+        this.name = name;
+        this.price = price;
+        this.stockQuantity = stockQuantity;
+    }
+
+    protected void setItemId(Long id) {
+        this.itemId = id;
+    }
+
     public void addStock(int quantity) {
         stockQuantity += quantity;
     }

@@ -25,6 +25,10 @@ public class Money {
         this.value = value;
     }
 
+    public static Money from(int value) {
+        return new Money(value);
+    }
+
     public static Money sum(List<Money> moneyList) {
         return new Money(moneyList.stream().mapToInt(Money::toIntValue).sum());
     }

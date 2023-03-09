@@ -1,7 +1,7 @@
 package com.example.infleanjpalecture.item.adapter.out.persistence;
 
 import com.example.infleanjpalecture.item.application.port.out.ItemLoadPort;
-import com.example.infleanjpalecture.item.domain.Item;
+import com.example.infleanjpalecture.item.domain.Book;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
@@ -16,12 +16,12 @@ public class ItemLoadAdapter implements ItemLoadPort {
 
 
     @Override
-    public Item loadOne(Long id) {
-        return entityManager.find(Item.class, id);
+    public Book loadOne(Long id) {
+        return entityManager.find(Book.class, id);
     }
 
     @Override
-    public List<Item> loadAll() {
-        return entityManager.createQuery("select i from Item i", Item.class).getResultList();
+    public List<Book> loadAll() {
+        return entityManager.createQuery("select i from Book i", Book.class).getResultList();
     }
 }

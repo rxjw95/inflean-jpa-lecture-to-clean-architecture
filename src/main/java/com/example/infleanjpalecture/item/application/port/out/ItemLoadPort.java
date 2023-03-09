@@ -1,12 +1,12 @@
 package com.example.infleanjpalecture.item.application.port.out;
 
-import com.example.infleanjpalecture.item.domain.Item;
+import com.example.infleanjpalecture.item.domain.Book;
 
 import java.util.List;
 
 public interface ItemLoadPort {
 
-    Item loadOne(Long id);
+    Book loadOne(Long id);
 
-    List<Item> loadAll();
+    List<Book> loadAll();
 }
