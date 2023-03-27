@@ -1,6 +1,6 @@
-package com.example.infleanjpalecture.member.adapter.out.persistence;
+package com.example.infleanjpalecture.member.adapter.persistence;
 
-import com.example.infleanjpalecture.member.application.port.out.MemberLoadPort;
+import com.example.infleanjpalecture.member.application.usecase.out.MemberLoadPort;
 import com.example.infleanjpalecture.member.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

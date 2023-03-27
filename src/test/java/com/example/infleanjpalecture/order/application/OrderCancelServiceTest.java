@@ -4,7 +4,7 @@ import com.example.infleanjpalecture.common.domain.Address;
 import com.example.infleanjpalecture.common.domain.Money;
 import com.example.infleanjpalecture.item.application.port.out.ItemPersistPort;
 import com.example.infleanjpalecture.item.domain.Book;
-import com.example.infleanjpalecture.member.application.port.out.MemberPersistPort;
+import com.example.infleanjpalecture.member.application.usecase.out.MemberPersistPort;
 import com.example.infleanjpalecture.member.domain.Member;
 import com.example.infleanjpalecture.order.application.port.in.OrderCancelUseCase;
 import com.example.infleanjpalecture.order.application.port.out.OrderLoadPort;

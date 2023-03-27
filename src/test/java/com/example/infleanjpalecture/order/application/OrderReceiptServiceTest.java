@@ -5,7 +5,7 @@ import com.example.infleanjpalecture.common.domain.Money;
 import com.example.infleanjpalecture.exception.NotEnoughStockException;
 import com.example.infleanjpalecture.item.application.port.out.ItemPersistPort;
 import com.example.infleanjpalecture.item.domain.Book;
-import com.example.infleanjpalecture.member.application.port.out.MemberPersistPort;
+import com.example.infleanjpalecture.member.application.usecase.out.MemberPersistPort;
 import com.example.infleanjpalecture.member.domain.Member;
 import com.example.infleanjpalecture.order.application.port.in.OrderRegisterUseCase;
 import com.example.infleanjpalecture.order.application.port.out.OrderLoadPort;

@@ -1,4 +1,4 @@
-package com.example.infleanjpalecture.member.application.port.out;
+package com.example.infleanjpalecture.member.application.usecase.out;
 
 import com.example.infleanjpalecture.member.domain.Member;
 

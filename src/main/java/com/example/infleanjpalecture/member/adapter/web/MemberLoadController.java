@@ -1,7 +1,7 @@
-package com.example.infleanjpalecture.member.adapter.in.web;
+package com.example.infleanjpalecture.member.adapter.web;
 
-import com.example.infleanjpalecture.member.application.port.dto.MemberDto;
-import com.example.infleanjpalecture.member.application.port.in.MemberLoadUseCase;
+import com.example.infleanjpalecture.member.application.dto.MemberDto;
+import com.example.infleanjpalecture.member.application.usecase.in.MemberLoadUseCase;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
 package com.example.infleanjpalecture.member.application;
 
-import com.example.infleanjpalecture.member.application.port.dto.MemberDto;
+import com.example.infleanjpalecture.member.application.dto.MemberDto;
 import com.example.infleanjpalecture.member.domain.Member;
 import org.springframework.stereotype.Component;
 

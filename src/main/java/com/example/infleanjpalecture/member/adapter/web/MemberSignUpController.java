@@ -1,8 +1,8 @@
-package com.example.infleanjpalecture.member.adapter.in.web;
+package com.example.infleanjpalecture.member.adapter.web;
 
 import com.example.infleanjpalecture.common.domain.Address;
-import com.example.infleanjpalecture.member.application.port.dto.SignUpCommand;
-import com.example.infleanjpalecture.member.application.port.in.MemberSignUpUseCase;
+import com.example.infleanjpalecture.member.application.dto.SignUpCommand;
+import com.example.infleanjpalecture.member.application.usecase.in.MemberSignUpUseCase;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
 package com.example.infleanjpalecture.member.application;
 
-import com.example.infleanjpalecture.member.application.port.dto.MemberDto;
-import com.example.infleanjpalecture.member.application.port.in.MemberLoadUseCase;
-import com.example.infleanjpalecture.member.application.port.out.MemberLoadPort;
+import com.example.infleanjpalecture.member.application.dto.MemberDto;
+import com.example.infleanjpalecture.member.application.usecase.in.MemberLoadUseCase;
+import com.example.infleanjpalecture.member.application.usecase.out.MemberLoadPort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

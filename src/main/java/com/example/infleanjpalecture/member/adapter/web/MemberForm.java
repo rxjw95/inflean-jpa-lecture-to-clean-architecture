@@ -1,4 +1,4 @@
-package com.example.infleanjpalecture.member.adapter.in.web;
+package com.example.infleanjpalecture.member.adapter.web;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;

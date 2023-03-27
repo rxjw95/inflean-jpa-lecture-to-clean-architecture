@@ -2,7 +2,7 @@ package com.example.infleanjpalecture.order.application;
 
 import com.example.infleanjpalecture.item.application.port.out.ItemLoadPort;
 import com.example.infleanjpalecture.item.domain.Book;
-import com.example.infleanjpalecture.member.application.port.out.MemberLoadPort;
+import com.example.infleanjpalecture.member.application.usecase.out.MemberLoadPort;
 import com.example.infleanjpalecture.member.domain.Member;
 import com.example.infleanjpalecture.order.application.port.dto.OrderItemDto;
 import com.example.infleanjpalecture.order.application.port.dto.OrderMemberDto;
